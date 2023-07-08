@@ -1,0 +1,354 @@
+<!-- Catalouge Page -->
+<!-- Avinash Joshi -->
+<!-- 20100BTCSBS07463 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalogue Page</title>
+<style>
+#top table {
+    width: 100%;
+}
+#top table thead tr #logo {
+    width: 15.6%;
+}
+#top table thead tr th img {
+    width: 70%;
+    height: 70%;
+}
+#top table thead tr th #buy {
+    border: 2px solid blue;
+    text-decoration: none;
+    position: absolute;
+    margin: 20px;
+    top: 5px;
+    right: 5px;
+    border-radius: 0.5em;
+    padding: 6px;
+}
+#middle table {
+    width: 100%;
+}
+#middle a {
+    text-decoration: none;
+}
+#bottom table {
+    width: 100%;
+}
+#bottom table {
+    border-collapse: collapse;
+}
+#bottom table tbody tr #bottom1 {
+    width: 15.79%;
+    padding: 2px 10px 390px 2px;
+}
+#bottom table #bottomleft {
+    /* width: 15.79%; */
+    width: 100%;
+}
+#lowerdescription .image {
+    width: 18%;
+}
+#lowerdescription .description {
+    width: 36.8%;
+}
+#lowerdescription .price {
+    width: 30.2%;
+    font-size: 30px;
+    text-align: center;
+}
+#lowerdescription .addtocart {
+    text-align: center;
+}
+#lowerdescription .addtocart button {
+    border: 2px solid black;
+    border-radius: 1.5em;
+    cursor: pointer;
+    font-size: large;
+    background-color: orange;
+}
+#lowerdescription tbody tr td img {
+    width: 100px;
+    height: 100px;
+}
+</style>
+</head>
+
+<body>
+<div id="top">
+<table border="1">
+<thead>
+<tr>
+<th id="logo">
+<img src="https://images.shiksha.com/mediadata/images/1571909115phpJGfm5s.jpeg" alt="LOGO"id="topleft">
+</th>
+<th>
+<h1>Vaishnav Books</h1>
+<button id="buy" class="purchase"><a href="practical5Cart.html">Purchase</a></button>
+</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="middle">
+<table border="1">
+<thead>
+<tr>
+<th>
+<a href="practical1Homepage.html">Home</a>
+</th>
+<th>
+<a href="practical2loginpage.html">Login</a>
+</th>
+<th>
+<a href="practical4Registration.html">Registration</a>
+</th>
+<th>
+<a href="">Catalogue</a>
+</th>
+<th>
+<a href="practical5Cart.html" class="purchase">Cart</a>
+</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="bottom">
+<table border="1">
+<tbody>
+<tr>
+<td id="bottom1">
+<table border=1 id="bottomleft">
+<tbody>
+<tr>
+<td>CSBS</td>
+</tr>
+<tr>
+<td>CSE</td>
+</tr>
+<tr>
+<td>ECE</td>
+</tr>
+<tr>
+<td>EEE
+</td>
+</tr>
+<tr>
+<td>CIVIL</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td id="bottom2">
+<table id="lowerdescription" border="1">
+<thead>
+<tr>
+<th>BOOK</th>
+<th>DESCRIPTION OF BOOK</th>
+<th>PRICE</th>
+<th>QUANTITY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="image">
+<img src="https://m.media-amazon.com/images/I/81tk3waxwmL.jpg"
+alt="Slow Internet">
+</td>
+<td class="description">
+<p><b>Book: </b>C Programming language</p>
+<p><b>Auther: </b> Darrel L. Graham</p>
+<p><b>Publication: </b> NAN</p>
+</td>
+<td class="price">
+<p>20$</p>
+</td>
+<td class="addtocart">
+<p id="q1">0</p>
+<button id="addtocart1">Add to Cart</button>
+</td>
+</tr>
+<tr>
+<td class="image">
+<img src="https://static.packt-cdn.com/products/9781785886300/cover/smaller" alt="Slow Internet">
+</td>
+<td class="description">
+<p><b>Book: </b>Web Development</p>
+<p><b>Auther: </b> Amos Q. Haviv</p>
+<p><b>Publication: </b>NAN</p>
+</td>
+<td class="price">
+<p>50$</p>
+</td>
+<td class="addtocart">
+<p id="q2">0</p>
+<button id="addtocart2">Add to Cart</button>
+</td>
+</tr>
+<tr>
+<td class="image">
+<img src="https://m.media-amazon.com/images/I/718S5CR4CgL.jpg"
+alt="Slow Internet">
+</td>
+<td class="description">
+<p><b>Book: </b>Let Us C++</p>
+<p><b>Auther: </b>Yashavant Kanethar</p>
+<p><b>Publication: </b>NAN</p>
+</td>
+<td class="price">
+<p>15$</p>
+</td>
+<td class="addtocart">
+<p id="q3">0</p>
+<button id="addtocart3">Add to Cart</button>
+</td>
+</tr>
+<tr>
+<td class="image">
+<img src="https://files.realpython.com/media/think-python-cover.a6cbd57dbde7.jpg" alt="Slow Internet">
+</td>
+<td class="description">
+<p><b>Book: </b>Think Python</p>
+<p><b>Auther: </b>Alien B Downey</p>
+<p><b>Publication: </b>NAN</p>
+</td>
+<td class="price">
+<p>50$</p>
+</td>
+<td class="addtocart">
+<p id="q4">0</p>
+<button id="addtocart4">Add to Cart</button>
+</td>
+</tr>
+</tbody>
+</td>
+</tr>
+</tbody>
+</table>
+</table>
+</div>
+
+</body>
+
+<script>
+    const addToCartBtn1 = document.getElementById("addtocart1");
+    const addToCartBtn2 = document.getElementById("addtocart2");
+    const addToCartBtn3 = document.getElementById("addtocart3");
+    const addToCartBtn4 = document.getElementById("addtocart4");
+    const gotocart = document.getElementsByClassName("purchase");
+    let cart = [];
+    let q = 0;
+    let found = 0;
+
+    addToCartBtn1.addEventListener("click", function () {
+        found = 0;
+        for (let i = 0; i < cart.length; i++) {
+            if (cart[i].title === "C Programming language" && cart[i].author === "Darrel L. Graham" && cart[i].price === 20) {
+                cart[i].quantity++;
+                found = 1;
+                q = cart[i].quantity;
+                break;
+            }
+        }
+        if (found == 0) {
+            const item = {
+                title: "C Programming language",
+                author: "Darrel L. Graham",
+                price: 20,
+                quantity: 1
+            };
+            q = 1;
+            cart.push(item);
+        }
+        document.getElementById('q1').innerHTML = q;
+        localStorage.setItem("cart", JSON.stringify(cart));
+        console.log(cart);
+    });
+
+    addToCartBtn2.addEventListener("click", function () {
+        found = 0;
+        for (let i = 0; i < cart.length; i++) {
+            if (cart[i].title === "Web Development" && cart[i].author === "Amos Q. Haviv" && cart[i].price === 50) {
+                cart[i].quantity++;
+                found = 1;
+                q = cart[i].quantity;
+                break;
+            }
+        }
+        if (found == 0) {
+            const item = {
+                title: "Web Development",
+                author: "Amos Q. Haviv",
+                price: 50,
+                quantity: 1
+            };
+            q = 1;
+            cart.push(item);
+        }
+        document.getElementById('q2').innerHTML = q;
+        console.log(cart);
+        localStorage.setItem("cart", JSON.stringify(cart));
+    });
+
+    addToCartBtn3.addEventListener("click", function () {
+        found = 0;
+        for (let i = 0; i < cart.length; i++) {
+            if (cart[i].title === "Let Us C++" && cart[i].author === "Yashavant Kanethar" && cart[i].price === 15) {
+                cart[i].quantity++;
+                found = 1;
+                q = cart[i].quantity;
+                break;
+            }
+        }
+        if (found == 0) {
+            const item = {
+                title: "Let Us C++",
+                author: "Yashavant Kanethar",
+                price: 15,
+                quantity: 1
+            };
+            cart.push(item);
+            q = 1;
+        }
+        document.getElementById('q3').innerHTML = q;
+        console.log(cart);
+        localStorage.setItem("cart", JSON.stringify(cart));
+    });
+
+    addToCartBtn4.addEventListener("click", function () {
+        found = 0;
+        for (let i = 0; i < cart.length; i++) {
+            if (cart[i].title === "Think Python" && cart[i].author === "Alien B Downey" && cart[i].price === 50) {
+                cart[i].quantity++;
+                found = 1;
+                q = cart[i].quantity;
+                break;
+            }
+        }
+        if (found == 0) {
+            const item = {
+                title: "Think Python",
+                author: "Alien B Downey",
+                price: 50,
+                quantity: 1
+            };
+            cart.push(item);
+            q = 1;
+        }
+        console.log(cart);
+        document.getElementById('q4').innerHTML = q;
+        localStorage.setItem("cart", JSON.stringify(cart));
+    });
+
+    // converting the varibale into string 
+    gotocart.addEventListener("click", function () {
+        localStorage.setItem("cart", JSON.stringify(cart));
+    });
+    // console.log('Val: ',JSON.parse(localStorage.getItem("cart")));
+</script>
+
+</html>

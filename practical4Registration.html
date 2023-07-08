@@ -1,0 +1,203 @@
+<!-- Registration Page -->
+<!-- Avinash Joshi -->
+<!-- 20100BTCSBS07463 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Page</title>
+<style>
+#top table {
+    width: 100%;
+}
+#top table thead tr #logo {
+    width: 15.6%;
+}
+#top table thead tr th img {
+    width: 70%;
+    height: 70%;
+}
+#middle table {
+    width: 100%;
+}
+#middle a {
+    text-decoration: none;
+}
+#bottom table {
+    width: 100%;
+}
+#bottom table tbody tr #bottom1 {
+    width: 15.79%;
+}
+#bottom table #bottomleft {
+    /* width: 15.79%; */
+    width: 100%;
+}
+#lowerdescription {
+    margin: auto;
+}
+#lowerdescription #form {
+    margin: auto;
+    text-align: center;
+}
+#lowerdescription #form div {
+    margin: 5px;
+}
+#lowerdescription #form div label {
+    cursor: pointer;
+}
+#lowerdescription #form button {
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<div id="top">
+<table border="1">
+<thead>
+<tr>
+<th id="logo">
+<img src="https://images.shiksha.com/mediadata/images/1571909115phpJGfm5s.jpeg" alt="LOGO" id="topleft">
+</th>
+<th>
+<h1>Vaishnav Books</h1>
+</th>
+</tr>
+</thead>
+</table>
+
+</div>
+<div id="middle">
+<table border="1">
+<thead>
+<tr>
+<th>
+<a href="practical1Homepage.html">Home</a>
+</th>
+<th>
+<a href="practical2loginpage.html">Login</a>
+</th>
+<th>
+<a href="">Registration</a>
+</th>
+<th>
+<a href="practical3catalouge.html">Catalogue</a>
+</th>
+<th>
+<a href="practical5Cart.html">Cart</a>
+</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="bottom">
+<table border="1">
+<tbody>
+<tr>
+<td id="bottom1">
+<table border=1 id="bottomleft">
+<tbody>
+<tr>
+<td>CSBS</td>
+</tr>
+<tr>
+<td>CSE</td>
+</tr>
+<tr>
+<td>ECE</td>
+</tr>
+<tr>
+<td>EEE</td>
+</tr>
+<tr>
+<td>CIVIL</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td id="bottom2">
+<table id="lowerdescription">
+<tbody>
+<tr>
+<td>
+<form id="form" action="practical1Homepage.html">
+<div id="name">
+<label for="Name">Name : </label>
+<input type="text" id="Name">
+</div>
+<div id="password">
+<label for="Password">Password : </label>
+<input type="password" id="Password">
+</div>
+<div id="Email">
+<label for="Email">Email : </label>
+<input type="email" id="Email">
+</div>
+<div id="phone">
+<label for="Phone">Phone: </label>
+<input type="number" id="Phone">
+</div>
+<div id="gender">
+Gender:
+<input type="radio" name="xyz">Male
+<input type="radio" name="xyz">Female
+<input type="radio" name="xyz">Other
+</div>
+<div id="dob">
+<label for="dob">DOB:</label>
+<input type="date" id="dob">
+</div>
+<div id="lang">
+Language Known:
+<br>
+<label for="English">English</label>
+<input type="checkbox" name="abc" id="English">
+<label for="Hindi">Hindi</label>
+<input type="checkbox" name="abc" id="Hindi">
+<label for="Telgu">Telgu</label>
+<input type="checkbox" name="abc" id="Telgu">
+<label for="Tamil">Tamil</label>
+<input type="checkbox" name="abc" id="Tamil">
+</div>
+<div>
+<br>
+<button type="submit" onclick="check()">Submit</button>
+<button type="reset">Reset</button>
+</div>
+</form>
+</td>
+</tr>
+</tbody>
+</td>
+</tr>
+</tbody>
+</table>
+</table>
+</div>
+<!-- <input type="file"> -->
+</body>
+<script>
+    function check() {
+        let n = document.getElementById('Name').value;
+        let pattern = /^[a-zA-Z ]+$/;
+        console.log(n.match(pattern));
+        if(n.match(pattern)==null || n.length<6){
+            alert("Please enter the correct name and Name length should be greater than 6");
+        }
+
+        let ph=document.getElementById('Phone').value
+        if(ph.length!=10){
+            alert("Please enter correct number")
+        }
+
+        let p=document.getElementById('Password').value;
+        if(p.length<6){
+            alert('Password length should be greater than 6')
+        }
+    }
+</script>
+</html>
